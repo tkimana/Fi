@@ -21,4 +21,5 @@ print(Se1.alies)
 # Create a class(blueprint)
 # create a instance (object)
 # class vs instance 
-# instance attributes: defined in __init__
+# instance attributes: defined in __init__(self)
+# Class attributes
