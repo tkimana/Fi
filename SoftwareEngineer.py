@@ -1,3 +1,13 @@
+
+se1=["Software Engineer", "Joe", 10, "junior", 3000]
+se2=["Software Engineer", "Alex", 100, "Sunior", 5000]
+
+def code(se):
+    print(f'{se[1]} is writing code ...')
+
+code(se2)
+
+
 class SoftwareEngineer:
     # Class attribute
     alies= 'Magic keyboard'
@@ -17,7 +27,7 @@ Se1= SoftwareEngineer('greg', 23, 'Entry Level', '80k')
 print(Se1.name, Se1.age, Se1.level, Se1.salary)
 print(Se1.alies)
 
-# Recad 
+# Recap
 # Create a class(blueprint)
 # create a instance (object)
 # class vs instance 
