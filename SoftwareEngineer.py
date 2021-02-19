@@ -71,3 +71,5 @@ print(Se1.entry_salary)
 # class vs instance 
 # instance attributes: defined in __init__(self)
 # Class attributes
+
+
