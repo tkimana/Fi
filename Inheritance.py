@@ -20,15 +20,38 @@ class SoftwareEngineer(Employee):
         super().__init__(name,age,salary)
         self.level=level
 
+    def raised(self):
+        print(f"{self.name} got the raised..")
+
 
 class Designer(Employee):
-    pass
+    def __init__(self, name, age, salary, level, location):
+        super().__init__(name, age, salary)
+        self.location=location
+        self.level=level
+
 
 
 
 Se= SoftwareEngineer('Joe', 24, 4000, 'Junior')
-De= Designer('Greg', 34, 500)
+De= Designer('Greg', 34, 500, 'Sunior', 'Houston')
 
-print(Se.level)
 
-Se.work()
+print(De.level)
+De.work()
+
+Se.raised()
+
+# Polymorphism
+
+
+employees= [SoftwareEngineer('Joe', 24, 4000, 'Junior'), Designer('Greg', 34, 500, 'Sunior', 'Houston'),
+ SoftwareEngineer('Math', 43, 500, 'Junior' )]
+
+
+
+def motivate_employees(employees):
+    for employee in employees:
+            employee.work()
+
+motivate_employees(employees)
